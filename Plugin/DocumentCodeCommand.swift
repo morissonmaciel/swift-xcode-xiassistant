@@ -1,5 +1,5 @@
 //
-//  DocumentSelectedCodeCommand.swift
+//  DocumentCodeCommand.swift
 //  Plugin
 //
 //  Created by Morisson Marcel on 28/03/24.
@@ -8,7 +8,7 @@
 import Foundation
 import XcodeKit
 
-class DocumentSelectedCodeCommand: NSObject, XCSourceEditorCommand {
+class DocumentCodeCommand: NSObject, XCSourceEditorCommand {
     
     func consultAssistantAPI(with prompt: String) async throws -> CodeSelection {
         let url = URL(string: "http://localhost:3000/api/assistant/doc")!
@@ -40,7 +40,6 @@ class DocumentSelectedCodeCommand: NSObject, XCSourceEditorCommand {
         
         let start = selection.start.line
         let end = selection.end.line > (lines.count - 1) ? lines.count - 1 : selection.end.line
-        let count = end - start
         
         let selectedRange = lines[start...end]
         let code = selectedRange.joined()

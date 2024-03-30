@@ -10,19 +10,27 @@
 			<array>
 				<dict>
 					<key>XCSourceEditorCommandClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).DocumentSelectedCodeCommand</string>
+					<string>$(PRODUCT_MODULE_NAME).DocumentCodeCommand</string>
 					<key>XCSourceEditorCommandIdentifier</key>
-					<string>$(PRODUCT_BUNDLE_IDENTIFIER).DocumentSelectedCodeCommand</string>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).DocumentCodeCommand</string>
 					<key>XCSourceEditorCommandName</key>
 					<string>Document Selected Code</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).GenerateCodeCommand</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).GenerateCodeCommand</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Generate Code</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>
-            <key>IsEnabled</key>
-            <true/>
-            <key>IsHidden</key>
-            <false/>
+			<key>IsEnabled</key>
+			<true/>
+			<key>IsHidden</key>
+			<false/>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.dt.Xcode.extension.source-editor</string>
