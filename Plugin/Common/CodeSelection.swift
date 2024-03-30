@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+typealias CodeSelection = [String]
+
+extension CodeSelection {
+    func toString() -> String {
+        self.joined(separator: "\n")
+    }
+}

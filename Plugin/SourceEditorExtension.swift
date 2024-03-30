@@ -10,11 +10,11 @@ import XcodeKit
 
 class SourceEditorExtension: NSObject, XCSourceEditorExtension {
     
-    /*
+    static var shared: SourceEditorExtension?
+    
     func extensionDidFinishLaunching() {
-        // If your extension needs to do any work at launch, implement this optional method.
+        Self.shared = self
     }
-    */
     
     /*
     var commandDefinitions: [[XCSourceEditorCommandDefinitionKey: Any]] {
