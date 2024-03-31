@@ -22,7 +22,7 @@
 					<key>XCSourceEditorCommandIdentifier</key>
 					<string>$(PRODUCT_BUNDLE_IDENTIFIER).GenerateCodeCommand</string>
 					<key>XCSourceEditorCommandName</key>
-					<string>Generate Code</string>
+					<string>Generate or Transform Code</string>
 				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>

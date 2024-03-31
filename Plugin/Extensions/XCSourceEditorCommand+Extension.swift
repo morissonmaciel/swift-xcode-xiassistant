@@ -10,6 +10,7 @@ import XcodeKit
 
 extension XCSourceEditorCommandInvocation {
     
+    /// Returns the selected lines of code in the current buffer, or an empty array if no selection is made.
     var selectedLines: CodeSelection? {
         guard let lines = self.buffer.lines as? [String],
               let selection = self.buffer.selections.firstObject as? XCSourceTextRange else {
@@ -23,6 +24,7 @@ extension XCSourceEditorCommandInvocation {
         return CodeSelection(selectedRange)
     }
     
+    /// Returns all the lines of code in the current buffer.
     var allLines: CodeSelection {
         guard let lines = self.buffer.lines as? [String] else {
             return []
@@ -31,7 +33,8 @@ extension XCSourceEditorCommandInvocation {
         return lines as CodeSelection
     }
     
-    func replaceSelection(with newLines: [String], relevantTag: String = "CODE") {
+    /// Replaces the selected lines of code with new lines of code, preserving any existing code blocks or comments.
+    func replaceSelection(with newLines: [String], relevantTag: String = "CODE", strictToCode: Bool = true) {
         guard let selection = self.buffer.selections.firstObject as? XCSourceTextRange else { return }
         
         let start = selection.start.line
@@ -54,6 +57,7 @@ extension XCSourceEditorCommandInvocation {
             }
             
             guard !ignoreLine  else { continue }
+            if !isCodeBlock && strictToCode { continue }
             
             let newEntry = isCodeBlock ? newLine : "// \(newLine)"
             

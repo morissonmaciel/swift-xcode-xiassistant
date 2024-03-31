@@ -37,6 +37,8 @@ class AssistantProvider {
         guard let url = getURL(for: intent) else { return [] }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
+        request.cachePolicy = .reloadIgnoringCacheData
+        request.timeoutInterval = 10.0
         
         switch intent {
             case .documentation(let prompt):
