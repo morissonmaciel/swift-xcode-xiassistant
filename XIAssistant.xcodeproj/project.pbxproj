@@ -20,6 +20,8 @@
 		353A6BB32BB64E1000B09B0A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB22BB64E1000B09B0A /* Array+Extensions.swift */; };
 		353A6BB62BB8695100B09B0A /* CodeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB52BB8695100B09B0A /* CodeSelection.swift */; };
 		353A6BB82BB8ABFC00B09B0A /* GenerateCodeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB72BB8ABFC00B09B0A /* GenerateCodeCommand.swift */; };
+		353A6BBA2BB8BC9400B09B0A /* AssistantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */; };
+		3579AE562BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		353A6BB22BB64E1000B09B0A /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		353A6BB52BB8695100B09B0A /* CodeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSelection.swift; sourceTree = "<group>"; };
 		353A6BB72BB8ABFC00B09B0A /* GenerateCodeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCodeCommand.swift; sourceTree = "<group>"; };
+		353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantProvider.swift; sourceTree = "<group>"; };
+		3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceEditorCommand+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,7 @@
 		353A6BA12BB635C600B09B0A /* Plugin */ = {
 			isa = PBXGroup;
 			children = (
+				3579AE542BB9F32200ABE5B2 /* Extensions */,
 				353A6BB42BB8693D00B09B0A /* Common */,
 				353A6BA22BB635C600B09B0A /* SourceEditorExtension.swift */,
 				353A6BB72BB8ABFC00B09B0A /* GenerateCodeCommand.swift */,
@@ -162,8 +167,17 @@
 			isa = PBXGroup;
 			children = (
 				353A6BB52BB8695100B09B0A /* CodeSelection.swift */,
+				353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		3579AE542BB9F32200ABE5B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,11 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3579AE562BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift in Sources */,
 				353A6BA32BB635C600B09B0A /* SourceEditorExtension.swift in Sources */,
 				353A6BB32BB64E1000B09B0A /* Array+Extensions.swift in Sources */,
 				353A6BA52BB635C600B09B0A /* DocumentCodeCommand.swift in Sources */,
 				353A6BB82BB8ABFC00B09B0A /* GenerateCodeCommand.swift in Sources */,
 				353A6BB62BB8695100B09B0A /* CodeSelection.swift in Sources */,
+				353A6BBA2BB8BC9400B09B0A /* AssistantProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
