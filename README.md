@@ -10,14 +10,15 @@ Pre-requisites
 To run this PoC, you will need the following:
 * Ollama or LLM Studio running
 * Codellama as an LLM model (e.g., `ollama run codellama`)
-
+* Web App / API for handling extensions requests installed and running. See https://github.com/morissonmaciel/react-ollama-chat-assistant.git
+ 
 Installation
 ------------
 To install the plugin, follow these steps:
 
 1. Clone the repository:
 ```bash
-    git clone https://github.com/morissonmaciel/XXX.git
+    git clone https://github.com/morissonmaciel/swift-xcode-xiassistant.git
 ```
 
 2. Open the project file using Xcode or terminal:
