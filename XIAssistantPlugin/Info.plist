@@ -6,6 +6,10 @@
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
+			<key>IsEnabled</key>
+			<true/>
+			<key>IsHidden</key>
+			<false/>
 			<key>XCSourceEditorCommandDefinitions</key>
 			<array>
 				<dict>
@@ -27,10 +31,6 @@
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>
-			<key>IsEnabled</key>
-			<true/>
-			<key>IsHidden</key>
-			<false/>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.dt.Xcode.extension.source-editor</string>

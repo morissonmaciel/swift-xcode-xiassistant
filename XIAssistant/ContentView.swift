@@ -7,23 +7,6 @@
 
 import SwiftUI
 
-struct AccentButton: View {
-    @State private var isPressed = false
-    let title: String
-    let color: Color
-    var body: some View {
-        Button(action: { self.isPressed.toggle() }) {
-            Text(title)
-                .fontWeight(.semibold)
-                .foregroundColor(.white)
-                .padding()
-                .background(
-                    Circle().fill(color).scaleEffect(isPressed ? 0.9 : 1)
-                )
-        }
-    }
-}
-
 struct ContentView: View {
     @State private var temperature = 0.1
     @State private var model = "codellama"
