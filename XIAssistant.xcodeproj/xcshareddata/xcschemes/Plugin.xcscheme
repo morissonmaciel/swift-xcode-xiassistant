@@ -17,7 +17,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "353A6B9A2BB635C600B09B0A"
-               BuildableName = "XIAssistantPlugin.appex"
+               BuildableName = "Local IA Assistant.appex"
                BlueprintName = "XIAssistantPlugin"
                ReferencedContainer = "container:XIAssistant.xcodeproj">
             </BuildableReference>
