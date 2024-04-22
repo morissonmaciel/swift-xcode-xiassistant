@@ -1,5 +1,5 @@
 //
-//  XIAssistantApp.swift
+//  MainApp.swift
 //  XIAssistant
 //
 //  Created by Morisson Marcel on 28/03/24.
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct XIAssistantApp: App {
+struct MainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }

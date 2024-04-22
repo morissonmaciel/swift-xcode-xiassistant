@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		353A6B892BB6358000B09B0A /* XIAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6B882BB6358000B09B0A /* XIAssistantApp.swift */; };
-		353A6B8B2BB6358000B09B0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6B8A2BB6358000B09B0A /* ContentView.swift */; };
+		353A6B892BB6358000B09B0A /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6B882BB6358000B09B0A /* MainApp.swift */; };
+		353A6B8B2BB6358000B09B0A /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6B8A2BB6358000B09B0A /* RootView.swift */; };
 		353A6B8D2BB6358100B09B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353A6B8C2BB6358100B09B0A /* Assets.xcassets */; };
-		353A6B902BB6358100B09B0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353A6B8F2BB6358100B09B0A /* Preview Assets.xcassets */; };
 		353A6B9E2BB635C600B09B0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353A6B9D2BB635C600B09B0A /* Cocoa.framework */; };
 		353A6BA32BB635C600B09B0A /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BA22BB635C600B09B0A /* SourceEditorExtension.swift */; };
 		353A6BA52BB635C600B09B0A /* DocumentCodeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BA42BB635C600B09B0A /* DocumentCodeCommand.swift */; };
@@ -21,7 +20,15 @@
 		353A6BB62BB8695100B09B0A /* CodeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB52BB8695100B09B0A /* CodeSelection.swift */; };
 		353A6BB82BB8ABFC00B09B0A /* GenerateCodeCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB72BB8ABFC00B09B0A /* GenerateCodeCommand.swift */; };
 		353A6BBA2BB8BC9400B09B0A /* AssistantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */; };
+		3540A80B2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */; };
+		3540A80C2BD2A6A400DD6BBD /* RemoteAssistantSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */; };
+		3540A80E2BD2AC9700DD6BBD /* LLMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */; };
+		3540A80F2BD2ACF300DD6BBD /* LLMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */; };
+		3540A8122BD69CC400DD6BBD /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A8112BD69CC400DD6BBD /* SettingsItem.swift */; };
+		3540A8142BD6A54400DD6BBD /* AssistantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */; };
+		3550FAAC2BD2A03F00301137 /* AssistantSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3550FAAB2BD2A03F00301137 /* AssistantSettingsScreen.swift */; };
 		3579AE562BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */; };
+		35B9A96E2BCD974000025463 /* LLMSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B9A96D2BCD974000025463 /* LLMSettingsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +68,9 @@
 
 /* Begin PBXFileReference section */
 		353A6B852BB6358000B09B0A /* XIAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XIAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		353A6B882BB6358000B09B0A /* XIAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIAssistantApp.swift; sourceTree = "<group>"; };
-		353A6B8A2BB6358000B09B0A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		353A6B882BB6358000B09B0A /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		353A6B8A2BB6358000B09B0A /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		353A6B8C2BB6358100B09B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		353A6B8F2BB6358100B09B0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		353A6B912BB6358100B09B0A /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		353A6B9B2BB635C600B09B0A /* Local IA Assistant.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Local IA Assistant.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		353A6B9D2BB635C600B09B0A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -77,7 +83,12 @@
 		353A6BB52BB8695100B09B0A /* CodeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSelection.swift; sourceTree = "<group>"; };
 		353A6BB72BB8ABFC00B09B0A /* GenerateCodeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCodeCommand.swift; sourceTree = "<group>"; };
 		353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantProvider.swift; sourceTree = "<group>"; };
+		3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAssistantSettings.swift; sourceTree = "<group>"; };
+		3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMSettings.swift; sourceTree = "<group>"; };
+		3540A8112BD69CC400DD6BBD /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
+		3550FAAB2BD2A03F00301137 /* AssistantSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantSettingsScreen.swift; sourceTree = "<group>"; };
 		3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceEditorCommand+Extension.swift"; sourceTree = "<group>"; };
+		35B9A96D2BCD974000025463 /* LLMSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMSettingsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				353A6B872BB6358000B09B0A /* XIAssistant */,
+				3540A8092BD2A67C00DD6BBD /* XIAssistantCore */,
 				353A6BA12BB635C600B09B0A /* XIAssistantPlugin */,
 				353A6B9C2BB635C600B09B0A /* Frameworks */,
 				353A6B862BB6358000B09B0A /* Products */,
@@ -122,21 +134,15 @@
 		353A6B872BB6358000B09B0A /* XIAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				353A6B882BB6358000B09B0A /* XIAssistantApp.swift */,
-				353A6B8A2BB6358000B09B0A /* ContentView.swift */,
+				35F193B72BD6B33A0053974C /* Views */,
+				3540A8102BD69CB900DD6BBD /* Models */,
+				35B9A96C2BCD971C00025463 /* Screens */,
+				353A6B882BB6358000B09B0A /* MainApp.swift */,
+				353A6B8A2BB6358000B09B0A /* RootView.swift */,
 				353A6B8C2BB6358100B09B0A /* Assets.xcassets */,
 				353A6B912BB6358100B09B0A /* App.entitlements */,
-				353A6B8E2BB6358100B09B0A /* Preview Content */,
 			);
 			path = XIAssistant;
-			sourceTree = "<group>";
-		};
-		353A6B8E2BB6358100B09B0A /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				353A6B8F2BB6358100B09B0A /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		353A6B9C2BB635C600B09B0A /* Frameworks */ = {
@@ -167,9 +173,34 @@
 			isa = PBXGroup;
 			children = (
 				353A6BB52BB8695100B09B0A /* CodeSelection.swift */,
-				353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		3540A8092BD2A67C00DD6BBD /* XIAssistantCore */ = {
+			isa = PBXGroup;
+			children = (
+				3540A8132BD6A53500DD6BBD /* Providers */,
+				3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */,
+				3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */,
+			);
+			path = XIAssistantCore;
+			sourceTree = "<group>";
+		};
+		3540A8102BD69CB900DD6BBD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3540A8112BD69CC400DD6BBD /* SettingsItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3540A8132BD6A53500DD6BBD /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 		3579AE542BB9F32200ABE5B2 /* Extensions */ = {
@@ -178,6 +209,22 @@
 				3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35B9A96C2BCD971C00025463 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3550FAAB2BD2A03F00301137 /* AssistantSettingsScreen.swift */,
+				35B9A96D2BCD974000025463 /* LLMSettingsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		35F193B72BD6B33A0053974C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				353A6B902BB6358100B09B0A /* Preview Assets.xcassets in Resources */,
 				353A6B8D2BB6358100B09B0A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,8 +327,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				353A6B8B2BB6358000B09B0A /* ContentView.swift in Sources */,
-				353A6B892BB6358000B09B0A /* XIAssistantApp.swift in Sources */,
+				3550FAAC2BD2A03F00301137 /* AssistantSettingsScreen.swift in Sources */,
+				3540A80E2BD2AC9700DD6BBD /* LLMSettings.swift in Sources */,
+				353A6B8B2BB6358000B09B0A /* RootView.swift in Sources */,
+				3540A80B2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift in Sources */,
+				35B9A96E2BCD974000025463 /* LLMSettingsScreen.swift in Sources */,
+				353A6B892BB6358000B09B0A /* MainApp.swift in Sources */,
+				3540A8122BD69CC400DD6BBD /* SettingsItem.swift in Sources */,
+				3540A8142BD6A54400DD6BBD /* AssistantProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3579AE562BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift in Sources */,
+				3540A80F2BD2ACF300DD6BBD /* LLMSettings.swift in Sources */,
 				353A6BA32BB635C600B09B0A /* SourceEditorExtension.swift in Sources */,
 				353A6BB32BB64E1000B09B0A /* Array+Extensions.swift in Sources */,
+				3540A80C2BD2A6A400DD6BBD /* RemoteAssistantSettings.swift in Sources */,
 				353A6BA52BB635C600B09B0A /* DocumentCodeCommand.swift in Sources */,
 				353A6BB82BB8ABFC00B09B0A /* GenerateCodeCommand.swift in Sources */,
 				353A6BB62BB8695100B09B0A /* CodeSelection.swift in Sources */,
@@ -439,7 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"XIAssistant/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = GG5VUFSQ87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -467,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"XIAssistant/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = GG5VUFSQ87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

@@ -13,6 +13,11 @@ import Foundation
 class AssistantProvider {
     private static let baseAPI = "http://localhost:3000/api/assistant"
     
+    enum Errors: Error {
+        case internalFailure
+        case remoteFailure(String)
+    }
+    
     enum APIIntent {
         case documentation(String)
         case generation(String)
@@ -51,7 +56,15 @@ class AssistantProvider {
         }
         
         var streamlined = [String]()
-        let (bytes, _) = try await URLSession.shared.bytes(for: request)
+        let (bytes, response) = try await URLSession.shared.bytes(for: request)
+        
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw Errors.internalFailure
+        }
+        
+        guard 200...210 ~= httpResponse.statusCode else {
+            throw Errors.remoteFailure("\(httpResponse.statusCode) \(HTTPURLResponse.localizedString(forStatusCode: httpResponse.statusCode))")
+        }
         
         for try await line in bytes.lines {
             streamlined.append(line)
