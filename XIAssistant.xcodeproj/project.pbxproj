@@ -22,13 +22,23 @@
 		353A6BBA2BB8BC9400B09B0A /* AssistantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */; };
 		3540A80B2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */; };
 		3540A80C2BD2A6A400DD6BBD /* RemoteAssistantSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */; };
-		3540A80E2BD2AC9700DD6BBD /* LLMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */; };
-		3540A80F2BD2ACF300DD6BBD /* LLMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */; };
-		3540A8122BD69CC400DD6BBD /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A8112BD69CC400DD6BBD /* SettingsItem.swift */; };
+		3540A80E2BD2AC9700DD6BBD /* OllamaIntegrationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80D2BD2AC9700DD6BBD /* OllamaIntegrationSettings.swift */; };
+		3540A80F2BD2ACF300DD6BBD /* OllamaIntegrationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A80D2BD2AC9700DD6BBD /* OllamaIntegrationSettings.swift */; };
+		3540A8122BD69CC400DD6BBD /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3540A8112BD69CC400DD6BBD /* SettingsOption.swift */; };
 		3540A8142BD6A54400DD6BBD /* AssistantProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */; };
-		3550FAAC2BD2A03F00301137 /* AssistantSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3550FAAB2BD2A03F00301137 /* AssistantSettingsScreen.swift */; };
 		3579AE562BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */; };
-		35B9A96E2BCD974000025463 /* LLMSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B9A96D2BCD974000025463 /* LLMSettingsScreen.swift */; };
+		35B0F2BA2BD6DED400E5BCEF /* CodeGenerationChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0F2B92BD6DED400E5BCEF /* CodeGenerationChatViewModel.swift */; };
+		35B0F2C02BD6E5D400E5BCEF /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 35B0F2BF2BD6E5D400E5BCEF /* MarkdownUI */; };
+		35B0F2C22BD6FF7200E5BCEF /* CodeDocumentationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0F2C12BD6FF7200E5BCEF /* CodeDocumentationScreen.swift */; };
+		35B0F2C42BD6FF8000E5BCEF /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0F2C32BD6FF8000E5BCEF /* ActivityIndicatorView.swift */; };
+		35B0F2C62BD703F700E5BCEF /* CodeDocumentationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B0F2C52BD703F700E5BCEF /* CodeDocumentationViewModel.swift */; };
+		35B0F2CC2BD72BC700E5BCEF /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 35B0F2CB2BD72BC700E5BCEF /* SwiftSoup */; };
+		35B9A96E2BCD974000025463 /* OllamaSettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B9A96D2BCD974000025463 /* OllamaSettingsScreen.swift */; };
+		35F173742BD6D1D600A1AA8A /* CodeGenerationChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F173732BD6D1D600A1AA8A /* CodeGenerationChatScreen.swift */; };
+		35F193BD2BD6C5CB0053974C /* OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F193BC2BD6C5CB0053974C /* OllamaProvider.swift */; };
+		35F193C02BD6C6DD0053974C /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 35F193BF2BD6C6DD0053974C /* OpenAI */; };
+		35F193C22BD6CB4F0053974C /* OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F193BC2BD6C5CB0053974C /* OllamaProvider.swift */; };
+		35F193C42BD6CB950053974C /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 35F193C32BD6CB950053974C /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,11 +94,17 @@
 		353A6BB72BB8ABFC00B09B0A /* GenerateCodeCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateCodeCommand.swift; sourceTree = "<group>"; };
 		353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantProvider.swift; sourceTree = "<group>"; };
 		3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAssistantSettings.swift; sourceTree = "<group>"; };
-		3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMSettings.swift; sourceTree = "<group>"; };
-		3540A8112BD69CC400DD6BBD /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
-		3550FAAB2BD2A03F00301137 /* AssistantSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantSettingsScreen.swift; sourceTree = "<group>"; };
+		3540A80D2BD2AC9700DD6BBD /* OllamaIntegrationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaIntegrationSettings.swift; sourceTree = "<group>"; };
+		3540A8112BD69CC400DD6BBD /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
 		3579AE552BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCSourceEditorCommand+Extension.swift"; sourceTree = "<group>"; };
-		35B9A96D2BCD974000025463 /* LLMSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMSettingsScreen.swift; sourceTree = "<group>"; };
+		35B0F2B92BD6DED400E5BCEF /* CodeGenerationChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGenerationChatViewModel.swift; sourceTree = "<group>"; };
+		35B0F2C12BD6FF7200E5BCEF /* CodeDocumentationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDocumentationScreen.swift; sourceTree = "<group>"; };
+		35B0F2C32BD6FF8000E5BCEF /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		35B0F2C52BD703F700E5BCEF /* CodeDocumentationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDocumentationViewModel.swift; sourceTree = "<group>"; };
+		35B9A96D2BCD974000025463 /* OllamaSettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaSettingsScreen.swift; sourceTree = "<group>"; };
+		35F173722BD6CDCC00A1AA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		35F173732BD6D1D600A1AA8A /* CodeGenerationChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeGenerationChatScreen.swift; sourceTree = "<group>"; };
+		35F193BC2BD6C5CB0053974C /* OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OllamaProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F193C02BD6C6DD0053974C /* OpenAI in Frameworks */,
+				35B0F2C02BD6E5D400E5BCEF /* MarkdownUI in Frameworks */,
+				35B0F2CC2BD72BC700E5BCEF /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				353A6B9E2BB635C600B09B0A /* Cocoa.framework in Frameworks */,
+				35F193C42BD6CB950053974C /* OpenAI in Frameworks */,
 				353A6BAF2BB63A2700B09B0A /* XcodeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +154,7 @@
 		353A6B872BB6358000B09B0A /* XIAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				35F173722BD6CDCC00A1AA8A /* Info.plist */,
 				35F193B72BD6B33A0053974C /* Views */,
 				3540A8102BD69CB900DD6BBD /* Models */,
 				35B9A96C2BCD971C00025463 /* Screens */,
@@ -180,9 +201,10 @@
 		3540A8092BD2A67C00DD6BBD /* XIAssistantCore */ = {
 			isa = PBXGroup;
 			children = (
+				35B0F2B82BD6DEC200E5BCEF /* ViewModels */,
 				3540A8132BD6A53500DD6BBD /* Providers */,
 				3540A80A2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift */,
-				3540A80D2BD2AC9700DD6BBD /* LLMSettings.swift */,
+				3540A80D2BD2AC9700DD6BBD /* OllamaIntegrationSettings.swift */,
 			);
 			path = XIAssistantCore;
 			sourceTree = "<group>";
@@ -190,7 +212,7 @@
 		3540A8102BD69CB900DD6BBD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3540A8112BD69CC400DD6BBD /* SettingsItem.swift */,
+				35B0F2CD2BD8013600E5BCEF /* Settings */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				353A6BB92BB8BC9400B09B0A /* AssistantProvider.swift */,
+				35F193BC2BD6C5CB0053974C /* OllamaProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -211,11 +234,29 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		35B0F2B82BD6DEC200E5BCEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				35B0F2B92BD6DED400E5BCEF /* CodeGenerationChatViewModel.swift */,
+				35B0F2C52BD703F700E5BCEF /* CodeDocumentationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		35B0F2CD2BD8013600E5BCEF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3540A8112BD69CC400DD6BBD /* SettingsOption.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		35B9A96C2BCD971C00025463 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				3550FAAB2BD2A03F00301137 /* AssistantSettingsScreen.swift */,
-				35B9A96D2BCD974000025463 /* LLMSettingsScreen.swift */,
+				35B9A96D2BCD974000025463 /* OllamaSettingsScreen.swift */,
+				35F173732BD6D1D600A1AA8A /* CodeGenerationChatScreen.swift */,
+				35B0F2C12BD6FF7200E5BCEF /* CodeDocumentationScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -223,6 +264,7 @@
 		35F193B72BD6B33A0053974C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				35B0F2C32BD6FF8000E5BCEF /* ActivityIndicatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +287,11 @@
 				353A6BA92BB635C600B09B0A /* PBXTargetDependency */,
 			);
 			name = XIAssistant;
+			packageProductDependencies = (
+				35F193BF2BD6C6DD0053974C /* OpenAI */,
+				35B0F2BF2BD6E5D400E5BCEF /* MarkdownUI */,
+				35B0F2CB2BD72BC700E5BCEF /* SwiftSoup */,
+			);
 			productName = XIAssistant;
 			productReference = 353A6B852BB6358000B09B0A /* XIAssistant.app */;
 			productType = "com.apple.product-type.application";
@@ -263,6 +310,9 @@
 			dependencies = (
 			);
 			name = XIAssistantPlugin;
+			packageProductDependencies = (
+				35F193C32BD6CB950053974C /* OpenAI */,
+			);
 			productName = XIAssistantPlugin;
 			productReference = 353A6B9B2BB635C600B09B0A /* Local IA Assistant.appex */;
 			productType = "com.apple.product-type.xcode-extension";
@@ -294,6 +344,11 @@
 				Base,
 			);
 			mainGroup = 353A6B7C2BB6358000B09B0A;
+			packageReferences = (
+				35F193BE2BD6C6DD0053974C /* XCRemoteSwiftPackageReference "OpenAI" */,
+				35B0F2BE2BD6E5D400E5BCEF /* XCRemoteSwiftPackageReference "swift-markdown-ui" */,
+				35B0F2CA2BD72BC700E5BCEF /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 353A6B862BB6358000B09B0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,13 +382,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3550FAAC2BD2A03F00301137 /* AssistantSettingsScreen.swift in Sources */,
-				3540A80E2BD2AC9700DD6BBD /* LLMSettings.swift in Sources */,
+				3540A80E2BD2AC9700DD6BBD /* OllamaIntegrationSettings.swift in Sources */,
 				353A6B8B2BB6358000B09B0A /* RootView.swift in Sources */,
+				35B0F2C22BD6FF7200E5BCEF /* CodeDocumentationScreen.swift in Sources */,
+				35B0F2C42BD6FF8000E5BCEF /* ActivityIndicatorView.swift in Sources */,
 				3540A80B2BD2A69F00DD6BBD /* RemoteAssistantSettings.swift in Sources */,
-				35B9A96E2BCD974000025463 /* LLMSettingsScreen.swift in Sources */,
+				35B0F2BA2BD6DED400E5BCEF /* CodeGenerationChatViewModel.swift in Sources */,
+				35F173742BD6D1D600A1AA8A /* CodeGenerationChatScreen.swift in Sources */,
+				35F193BD2BD6C5CB0053974C /* OllamaProvider.swift in Sources */,
+				35B9A96E2BCD974000025463 /* OllamaSettingsScreen.swift in Sources */,
+				35B0F2C62BD703F700E5BCEF /* CodeDocumentationViewModel.swift in Sources */,
 				353A6B892BB6358000B09B0A /* MainApp.swift in Sources */,
-				3540A8122BD69CC400DD6BBD /* SettingsItem.swift in Sources */,
+				3540A8122BD69CC400DD6BBD /* SettingsOption.swift in Sources */,
 				3540A8142BD6A54400DD6BBD /* AssistantProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,9 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3579AE562BB9F33400ABE5B2 /* XCSourceEditorCommand+Extension.swift in Sources */,
-				3540A80F2BD2ACF300DD6BBD /* LLMSettings.swift in Sources */,
+				3540A80F2BD2ACF300DD6BBD /* OllamaIntegrationSettings.swift in Sources */,
 				353A6BA32BB635C600B09B0A /* SourceEditorExtension.swift in Sources */,
 				353A6BB32BB64E1000B09B0A /* Array+Extensions.swift in Sources */,
+				35F193C22BD6CB4F0053974C /* OllamaProvider.swift in Sources */,
 				3540A80C2BD2A6A400DD6BBD /* RemoteAssistantSettings.swift in Sources */,
 				353A6BA52BB635C600B09B0A /* DocumentCodeCommand.swift in Sources */,
 				353A6BB82BB8ABFC00B09B0A /* GenerateCodeCommand.swift in Sources */,
@@ -497,6 +558,7 @@
 				DEVELOPMENT_TEAM = GG5VUFSQ87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XIAssistant/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Xcode IA Assistant";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -525,6 +587,7 @@
 				DEVELOPMENT_TEAM = GG5VUFSQ87;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XIAssistant/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Xcode IA Assistant";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,6 +685,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35B0F2BE2BD6E5D400E5BCEF /* XCRemoteSwiftPackageReference "swift-markdown-ui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/swift-markdown-ui.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		35B0F2CA2BD72BC700E5BCEF /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.2;
+			};
+		};
+		35F193BE2BD6C6DD0053974C /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35B0F2BF2BD6E5D400E5BCEF /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35B0F2BE2BD6E5D400E5BCEF /* XCRemoteSwiftPackageReference "swift-markdown-ui" */;
+			productName = MarkdownUI;
+		};
+		35B0F2CB2BD72BC700E5BCEF /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35B0F2CA2BD72BC700E5BCEF /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		35F193BF2BD6C6DD0053974C /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35F193BE2BD6C6DD0053974C /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		35F193C32BD6CB950053974C /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35F193BE2BD6C6DD0053974C /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 353A6B7D2BB6358000B09B0A /* Project object */;
 }

@@ -1,15 +1,16 @@
 //
-//  LLMSettings.swift
+//  OllamaIntegrationSettings.swift
 //  XIAssistant
 //
 //  Created by Morisson Marcel on 19/04/24.
 //
 
-// IA: reuse UserDefaults keys into a new constants enum
 import Foundation
 import Observation
 
-@Observable final class LLMSettings {
+@Observable final class OllamaIntegrationSettings {
+    
+    static let shared = OllamaIntegrationSettings()
     
     struct UserDefaultsKeys {
         static let useDefaultsKey = "Assistant.UseDefaults"
@@ -25,7 +26,7 @@ import Observation
     var temperature: Float { didSet { saveSettings() }}
     var model: String { didSet { saveSettings() }}
     
-    init() {
+    private init() {
         useDefaults = true
         remoteUrl = "http://localhost:11434/v1"
         apiKey = "ollama"

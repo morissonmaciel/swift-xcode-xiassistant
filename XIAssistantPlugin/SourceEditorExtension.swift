@@ -11,7 +11,7 @@ import XcodeKit
 class SourceEditorExtension: NSObject, XCSourceEditorExtension {
     
     static var shared: SourceEditorExtension?
-    let provider = AssistantProvider()
+    let provider = OllamaProvider()
 
     func extensionDidFinishLaunching() {
         Self.shared = self

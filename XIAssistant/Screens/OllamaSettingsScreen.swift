@@ -1,5 +1,5 @@
 //
-//  LLMSettingsScreen.swift
+//  OllamaSettingsScreen.swift
 //  XIAssistant
 //
 //  Created by Morisson Marcel on 15/04/24.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct LLMSettingsScreen: View {
-    @Bindable var settings = LLMSettings()
+struct OllamaSettingsScreen: View {
+    @Bindable var settings = OllamaIntegrationSettings.shared
     
     var body: some View {
         Form {
@@ -22,6 +22,8 @@ struct LLMSettingsScreen: View {
                 TextField("Ollama integration key", text: $settings.apiKey)
                     .textFieldStyle(.roundedBorder)
                     .disabled(settings.useDefaults)
+            } header: {
+                Text("Remote Settings")
             } footer: {
                 Text("If set, overrides remote Ollama endpoint address and api integration key")
                     .font(.subheadline)
@@ -50,5 +52,5 @@ struct LLMSettingsScreen: View {
 }
 
 #Preview {
-    LLMSettingsScreen()
+    OllamaSettingsScreen()
 }
